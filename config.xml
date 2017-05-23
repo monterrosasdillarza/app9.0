@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<widget xmlns ="http://www.w3.org/ns/widgets"
+  xmlns:gap="http://phonegap.com/ns/1.0"
+  id ="com.phonegap.example9"
+  version ="1.0.0">
+  
+  <name>app9 Geolocalizacion</name>
+  
+  <description>
+    muestra la ubicacion del dispositivo segun el gps
+  </description>
+  
+  <author href="https://buid.phonegap.com" email="oscar_telez_oaxac@hotmail.com">
+jacob monterrosas dillarza
+  </author>
+  
+  <!--Personaliza la aplicaion y plataforma -->
+  <preference name="orientation" value="deafault"/>
+  <!--<preference name="orientation" value="portrait" />
+  <preference name="orientation" value="landscape" /> -->
+  <preference name="tragent-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="android-installLocation" value="auto"/>
+  <preference name="permissions" value="INTERNET"/>
+  
+  <!--Plugins-->
+  <!--Core plugins-->
+  <plugin name="cordova-plugin-device" spec="~1.1.4"/>
+  <plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+  <plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
+  
+   <!-- Plugin para Geololocalizadior-->
+  <plugin name="cordova-plugin-geolocation" source="npm"/>
+   
+   
+  <!--Colocar icono app-->
+  
+  <icon src="res/android/mdpi.png"/>
+  
+  </widget>
+  
